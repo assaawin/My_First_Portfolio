@@ -13,64 +13,123 @@
       }
 
       body {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         color: #333;
         line-height: 1.6;
         padding: 20px;
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
 
       .container {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
         background-color: white;
         border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        padding: 40px;
-        margin-top: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
       }
 
       header {
+        background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+        padding: 20px 0;
         text-align: center;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #eaeaea;
+        border-bottom: 3px solid #ecf0f1;
+      }
+
+      header ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      header a {
+        color: #ecf0f1;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        background-color: rgba(52, 73, 94, 0.8);
+        border: 2px solid #bdc3c7;
+      }
+
+      header a:hover {
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      main {
+        display: flex;
+        min-height: 500px;
+      }
+
+      article {
+        flex: 3;
+        padding: 40px;
+        background-color: #ffffff;
+      }
+
+      aside {
+        flex: 1;
+        background-color: #ecf0f1;
+        padding: 40px 20px;
+        border-left: 3px solid #bdc3c7;
+      }
+
+      aside p {
+        background-color: #d5dbdb;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-style: italic;
+        color: #2c3e50;
+        border: 1px solid #bdc3c7;
       }
 
       h1 {
         color: #2c3e50;
         margin-bottom: 15px;
         font-size: 2.5rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       h2 {
-        color: #3498db;
+        color: #34495e;
         margin: 30px 0 15px;
         font-size: 1.8rem;
-        border-left: 4px solid #3498db;
+        border-left: 4px solid #7f8c8d;
         padding-left: 15px;
       }
 
       h3 {
-        color: #e74c3c;
+        color: #2c3e50;
         margin: 25px 0 12px;
         font-size: 1.4rem;
+        background-color: #ecf0f1;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border-left: 4px solid #95a5a6;
       }
 
       p {
         margin-bottom: 20px;
         font-size: 1.1rem;
         text-align: justify;
+        color: #2c3e50;
       }
 
       .image-container {
         text-align: center;
         margin: 30px 0;
         padding: 20px;
-        background-color: #f8f9fa;
+        background-color: #ecf0f1;
         border-radius: 10px;
-        border: 2px solid #e9ecef;
+        border: 2px solid #bdc3c7;
       }
 
       .clickable-image {
@@ -78,36 +137,55 @@
         height: auto;
         border-radius: 10px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border: 2px solid #bdc3c7;
       }
 
       .clickable-image:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
       }
 
       .highlight {
-        background-color: #fff3cd;
+        background-color: #d5dbdb;
         padding: 15px;
         border-radius: 8px;
-        border-left: 4px solid #ffc107;
+        border-left: 4px solid #7f8c8d;
         margin: 20px 0;
+        border: 1px solid #bdc3c7;
       }
 
       footer {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: #ecf0f1;
         text-align: center;
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 2px solid #eaeaea;
-        color: #7f8c8d;
-        font-size: 0.9rem;
+        padding: 20px;
+        border-top: 3px solid #ecf0f1;
+      }
+
+      footer p {
+        margin: 0;
+        text-align: center;
+        color: #ecf0f1;
+      }
+
+      footer a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+        color: #2980b9;
       }
 
       .feature-list {
-        background-color: #e8f4fc;
+        background-color: #ecf0f1;
         padding: 20px;
         border-radius: 8px;
         margin: 20px 0;
+        border: 1px solid #bdc3c7;
       }
 
       .feature-list ul {
@@ -117,48 +195,56 @@
       .feature-list li {
         margin-bottom: 10px;
         font-size: 1.1rem;
+        color: #2c3e50;
       }
 
       .navigation {
         text-align: center;
         margin: 30px 0;
         padding: 20px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
         border-radius: 10px;
+        border: 2px solid #bdc3c7;
       }
 
       .nav-link {
         display: inline-block;
         padding: 12px 30px;
-        background-color: white;
-        color: #667eea;
+        background-color: #ecf0f1;
+        color: #2c3e50;
         text-decoration: none;
         border-radius: 25px;
         font-weight: bold;
         transition: all 0.3s ease;
         margin: 0 10px;
+        border: 2px solid #bdc3c7;
       }
 
       .nav-link:hover {
         background-color: #2c3e50;
-        color: white;
+        color: #ecf0f1;
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <article>
         <h1>Welcome to My Cool First Webpage! 🚀</h1>
         <p>Exploring the amazing world of web development with ALX</p>
-      </header>
 
-      <div class="navigation">
-        <a href="tweets.html" class="nav-link">📱 View My Tweets</a>
-      </div>
+        <div class="navigation">
+          <a href="tweets.html" class="nav-link">📱 View My Tweets</a>
+        </div>
 
-      <div class="content">
         <h2>About This Journey</h2>
         <p>
           This webpage represents my first steps into the fascinating world of
@@ -222,11 +308,18 @@
             innovation. This is just the beginning of an exciting journey!
           </p>
         </div>
-      </div>
+      </article>
 
-      <footer>
-        <p>Created with ❤️ for ALX Web Development Portfolio | &copy; 2025</p>
-      </footer>
-    </div>
+      <aside>
+        <p>placeholder to add comment thread later</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Made by Abubakari Issah -
+        <a href="https://github.com/assaawin" target="_blank">here</a>
+      </p>
+    </footer>
   </body>
 </html>

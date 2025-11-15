@@ -4,105 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tweets - ALX Portfolio</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Arial", sans-serif;
-      }
-
-      body {
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header {
-        background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
-        padding: 20px 0;
-        text-align: center;
-        border-bottom: 3px solid #ecf0f1;
-      }
-
-      header ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
-
-      header a {
-        color: #ecf0f1;
-        text-decoration: none;
-        padding: 12px 25px;
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        font-weight: bold;
-        background-color: rgba(52, 73, 94, 0.8);
-        border: 2px solid #bdc3c7;
-      }
-
-      header a:hover {
-        background-color: #ecf0f1;
-        color: #2c3e50;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      }
-
-      main {
-        padding: 40px;
-        background-color: #ffffff;
-        min-height: 500px;
-      }
-
-      article {
-        margin-bottom: 30px;
-      }
-
-      aside {
-        background-color: #ecf0f1;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        font-style: italic;
-        color: #666;
-        border: 1px solid #bdc3c7;
-      }
-
-      footer {
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-        color: #ecf0f1;
-        text-align: center;
-        padding: 20px;
-        border-top: 3px solid #ecf0f1;
-      }
-
-      footer p {
-        margin: 0;
-        text-align: center;
-        color: #ecf0f1;
-      }
-
-      footer a {
-        color: #3498db;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .tweet-container {
-        margin: 20px 0;
-        padding: 15px;
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        border: 2px solid #e9ecef;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -111,52 +12,45 @@
         <li><a href="tweets.html">Tweets</a></li>
       </ul>
     </header>
-
     <main>
       <article>
-        <h1>My Tweet Collection 🐦</h1>
-        <p>Sharing thoughts, ideas, and inspiration from the tech world</p>
+        <h1>My Tweet Collection</h1>
+        <p>Sharing thoughts and inspiration from the tech world</p>
 
-        <h2>Tech Inspiration & Thoughts</h2>
-        <p>
-          Here are some interesting tweets about technology, programming, and
-          web development that inspire me on my learning journey.
-        </p>
+        <h2>Tech Inspiration</h2>
+        <p>Interesting tweets about technology and programming.</p>
 
-        <div class="tweet-container">
-          <h3>Inspirational Tech Quote</h3>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              The most dangerous phrase in the language is, "We've always done
-              it this way." - Grace Hopper
-              <a
-                href="https://twitter.com/hashtag/technology?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#technology</a
-              >
-              <a
-                href="https://twitter.com/hashtag/innovation?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#innovation</a
-              >
-            </p>
-            &mdash; Tech Wisdom (@TechWisdomQuotes)
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            The most dangerous phrase in the language is, &quot;We&#39;ve always
+            done it this way.&quot; - Grace Hopper
             <a
-              href="https://twitter.com/TechWisdomQuotes/status/1581234567891230720?ref_src=twsrc%5Etfw"
-              >October 15, 2022</a
+              href="https://twitter.com/hashtag/technology?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#technology</a
             >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </article>
+            <a
+              href="https://twitter.com/hashtag/innovation?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#innovation</a
+            >
+          </p>
+          &mdash; Tech Wisdom (@TechWisdomQuotes)
+          <a
+            href="https://twitter.com/TechWisdomQuotes/status/1581234567891230720?ref_src=twsrc%5Etfw"
+            >October 15, 2022</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
 
+        <a href="index.html">Back to homepage</a>
+      </article>
       <aside>
         <p>placeholder to add comment thread later</p>
       </aside>
     </main>
-
     <footer>
       <p>
         Made by Abubakari Issah -
